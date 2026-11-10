@@ -3,11 +3,11 @@
   "base": "a691b2345",
   "base_tree": "9d7b9a02f0864295926888b2ca0ea1f57e6d977d",
   "n_blocks": 17,
-  "tip": "7efb30ae5f075aa76c0d31a1a7dbde1b263f1591",
-  "tree": "176ed88667e26cd426a857edd330b6d9219f5065",
+  "tip": "7c189c27f4c05186f8e6f3a0f2ce3d9522ab527f",
+  "tree": "45b277e8ad44e4e6f29854670d4e715db6604eb9",
   "all_patch": {
     "name": "rdna-boosts-all.patch",
-    "sha256": "371bff4d107b4663b4b6266f4ebd19eed80b8288be3e9a7aa38512af0bf9d473"
+    "sha256": "33bb126aa9d47da5caa88de0d4466d9501b5cfeaacb127cd4971fe2896f3bd47"
   },
   "patches": {
     "0000-rdna-boosts-block-00-foundation-band-uniformity-Meta.patch": "e90148cdba722fa421f58980c7e2946c1d90c8e2212191b276065e77d996d3dd",
@@ -15,7 +15,7 @@
     "0002-rdna-boosts-block-02-adaptive-MTP-draft-depth.patch": "be0658de27339dfed9510e6de827e0b76f2d3ee009c5fc8fe6ce67662d4fa446",
     "0003-rdna-boosts-block-03-chunked-gated-delta-net-prefill.patch": "fedd6cf6b618863bfa306faf41537203e75a440c866239c14a68fb8bff36db07",
     "0004-rdna-boosts-block-04-BF16-KV-cache-and-native-BF16-f.patch": "b6e3731bbf2c49befac6e641f15ab14e41d0bffb863753740b69250f04c4d6d7",
-    "0005-rdna-boosts-block-05-flash-attention-band-native-qua.patch": "09647ad5f06ed581e9aeb21ac58023fda3d0a5911e2fcd951f25aaf137758a0d",
+    "0005-rdna-boosts-block-05-flash-attention-band-native-qua.patch": "5f46a5b40fa23467d83c0c72a786060a02eccc0f407a3a7bcbfd602f840b50fa",
     "0006-rdna-boosts-block-06-MMB-quantized-prefill-GEMM.patch": "fcfb4b94471fcd6e90e1c0f9d0d0ba6bedba8c59292c939724926c7fdaf41f1d",
     "0007-rdna-boosts-block-07-k-quant-boosts-mmvq-VDR-Q6_K-MM.patch": "cafbb3b0fefade6ecfbe692e0f50a41e515f492fe1cd400a471aae17809aedb3",
     "0008-rdna-boosts-block-08-fused-kernels-old-08-fusions-ol.patch": "e350e2a5c9ba2d32a465d62cd4122d01318daf09ff988449146f021fd3765ef2",

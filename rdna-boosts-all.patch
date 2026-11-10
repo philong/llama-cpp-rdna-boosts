@@ -24005,7 +24005,7 @@ index ba4628fec..e585f7eeb 100644
 +    const bool nvidia = GGML_CUDA_CC_IS_NVIDIA(device_cc);
      const int gqa_limit = nvidia && gqa_ratio <= 4 && DV <= 256 ? 16 : INT_MAX;
 -    const bool use_gqa_opt = mask && max_bias == 0.0f && Q->ne[1] <= gqa_limit && K->ne[1] % FATTN_KQ_STRIDE == 0;
-+    const bool use_gqa_opt = (mask != nullptr || KQV->src[5] != nullptr) && max_bias == 0.0f && Q->ne[1] <= gqa_limit && K->ne[1] % FATTN_KQ_STRIDE == 0;
++    const bool use_gqa_opt = (mask != nullptr || KQV->src[5] != nullptr || KQV->src[6] != nullptr) && max_bias == 0.0f && Q->ne[1] <= gqa_limit && K->ne[1] % FATTN_KQ_STRIDE == 0;
 +
 +    // RDNA2 (gfx1030): cap ncols2<=2 for D=128. D=256 was capped on the belief that the wider
 +    // variants overflow the register file (occupancy 0 -> abort), but measured 4x8 D=256 launches
